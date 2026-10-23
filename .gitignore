@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 第三方 SDK / BSP（請自行下載，見各目錄 README）
+HECG_Lab/HECG100x64.dll
+HECG_Lab/HECG100x86.dll
+HECG_Lab/WhaleTeqHECG100_SDK*/
+M55M1_Firmware/Library/
+M55M1_Firmware/ThirdParty/
+M55M1_Firmware/SampleCode/
+TriAnswer_Firmware/TriBLE_Stu_Demo_original/
+
+# 資料集（PhysioNet/CinC 2017，自行下載）
+ECG_classification/data/*
+!ECG_classification/data/README.md
+
+# 擷取資料與建置產物
+captures/
+ecg_windows/
+ecg_live/
+*.npy
+TriAnswer_Firmware/**/build/
+M55M1_Firmware/**/build/
+M55M1_Firmware/**/Objects/
+M55M1_Firmware/**/Listings/
+*.uvoptx
+*.uvguix.*
+*.axf
+*.bin
+*.hex
+*.elf
+*.map
+ecg_inference_*.csv
+bandpass_golden.h
+
+# 臨時模型版本
+ECG_classification/deploy_*/

@@ -1,0 +1,37 @@
+test windows (1485, 15000), records 1024  (3s)
+
+===== deploy_v5_rerun\model_int8.tflite  (465 KB, single input)  5s
+window acc 85.39%  window macro-F1 0.8352
+record acc 86.43%  record macro-F1 0.8395  (>=30s only 0.8497)
+              precision    recall  f1-score   support
+
+      Normal     0.8889    0.9311    0.9095       610
+          AF     0.7959    0.8571    0.8254        91
+       Other     0.8328    0.7399    0.7836       323
+
+    accuracy                         0.8643      1024
+   macro avg     0.8392    0.8427    0.8395      1024
+weighted avg     0.8629    0.8643    0.8623      1024
+
+confusion (rows=true):
+ [[568   5  37]
+ [  2  78  11]
+ [ 69  15 239]]
+
+===== deploy\model_int8.tflite  (456 KB, single input)  5s
+window acc 85.79%  window macro-F1 0.8383
+record acc 86.43%  record macro-F1 0.8427  (>=30s only 0.8525)
+              precision    recall  f1-score   support
+
+      Normal     0.8992    0.9213    0.9101       610
+          AF     0.8061    0.8681    0.8360        91
+       Other     0.8106    0.7554    0.7821       323
+
+    accuracy                         0.8643      1024
+   macro avg     0.8387    0.8483    0.8427      1024
+weighted avg     0.8630    0.8643    0.8631      1024
+
+confusion (rows=true):
+ [[562   2  46]
+ [  1  79  11]
+ [ 62  17 244]]

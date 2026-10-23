@@ -1,0 +1,11 @@
+# PC 端腳本共用（Python 3.10+）
+numpy
+scipy
+wfdb                 # HECG_Lab/play_dataset.py 讀 CinC2017 記錄
+pyserial             # uart_capture.py / serial_monitor.py / live_level.py
+ai-edge-litert       # inference.py 的 TFLite 直譯器（裝不上時改裝 tensorflow）
+matplotlib           # read_npy.py 繪圖
+colorama             # serial_monitor.py 上色（選用）
+bleak                # legacy_ble/（選用）
+
+# ECG_classification/tools_eval_tflite_mcu.py 另需: tensorflow pandas scikit-learn
